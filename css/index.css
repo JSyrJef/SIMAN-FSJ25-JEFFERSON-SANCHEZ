@@ -1,0 +1,509 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+*{box-sizing: border-box;}
+
+
+/* HEADER STYLES */
+
+
+.header-container{
+    background-color: #a83338;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+}
+
+.header-container .logo-siman-big{
+    width: 15em;
+    margin-left: 1em;
+}
+
+.header-container .search-container{
+    background-color: #7a232e;
+    width: 45em;
+    height: 2.8em;
+    border-radius: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container .search-container .icon-search{
+    margin-left: 1em;
+}
+
+.header-container .search-container .icon-search img{
+    width: 1.5em;
+}
+
+.header-container .search-container input{
+    width: 100%;
+    height: 2em;
+    overflow: hidden;
+    border: #7a232e;
+    background-color: #7a232e;
+    border-radius: 100px;
+    padding-left: 1em;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.header-container .search-container input::placeholder{
+    color: white;
+    font-size: 1.4rem;
+}
+.header-container .search-container input:focus-visible{
+    border: #7a232e;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.icons-header{
+    margin-right: 2em;
+}
+
+.icons-header a img{
+    width: 2.2rem;
+    margin-right: 1.3em;
+}
+
+.navbar-search{
+    background-color: #f1f1f1;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-search ul{
+    margin: 0;
+}
+.navbar-search ul il a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 4px;
+    font-weight: 300;
+}
+
+.navbar-search ul il a:hover{
+    text-decoration:underline;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que el ícono del menú esté por encima de otros elementos */
+}
+
+.navbar-search ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-search ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px;
+    transition: 0.3s;
+    text-decoration: none;
+    z-index: 999; /* Asegura que el menú lateral esté por encima de otros elementos */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* MAIN STYLES */
+
+.container-content{
+    margin: 0 9em;
+    display: flex;
+    justify-content: center;
+}
+
+.container-content .content .banner-siman{
+    border-radius: 20px;
+    display: grid;
+    margin: 1em auto;
+}
+
+
+/* CARRUSEL STYLES */
+
+
+/* Contenedor principal del carrusel */
+.carousel {
+    width: 85em;
+    height: 31em;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Contenedor de las imágenes */
+.carousel-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Cada imagen ocupa el 100% del contenedor principal */
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Botones de navegación */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}
+
+/* Indicadores de posición */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-indicators span {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    background-color: white;
+}
+
+/* estilos de promociones */
+
+.promos-container{
+    display: grid;
+    justify-content: center;
+}
+
+.promos-container .promos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.promos-container .promos img{
+    margin: 1em 3em;
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease; /* Transición suave */
+}
+
+.promos-container .promos img:hover{
+    box-shadow: 10px 10px 10px rgba(46, 48, 48, 0.3); /* Añade la sombra al hacer hover */
+}
+
+
+/* carrusel de compras */
+
+.titulos-secciones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+.titulos-secciones h1{
+   font-weight: 300;
+}
+
+.titulos-secciones a{
+    color: black;
+ }
+
+.carousel-container-compras {
+    position: relative;
+    width: 82%; /* Ajusta el ancho según sea necesario */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-compras {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide-compras {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-item-compras {
+    flex: 1;
+    min-width: 25%; /* Cada item ocupa el 25% del ancho del carrusel (4 imágenes por slide) */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel-item-compras img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info-compras {
+    margin-top: 10px;
+}
+
+.product-name-compras {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.buy-button-compras {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #bf1b24;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-button-compras:hover {
+    background-color: #b31920;
+}
+
+.carousel-control-compras {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.carousel-control-compras.prev-compras {
+    left: 10px;
+    border-radius: 100px;
+}
+
+.carousel-control-compras.next-compras {
+    right: 10px;
+    border-radius: 100px;
+}
+
+/* categorias styles */
+
+.divisor{
+    margin-top: 4em;
+    margin-bottom: 3em;
+}
+
+.container-categorias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circle .text {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #bf1b24;
+    border-radius: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.circle .text:hover {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #b31920;
+    border-radius: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.circle:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* botom-banner */
+
+.img-botom-banner{
+    display: grid;
+    justify-content: center;
+}
+
+/* footer */
+
+.footer{
+    background-color: #f1f1f1;
+    padding: 2em 10em;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.row .columna1 .logo-footer{
+    width: 15em;
+}
+
+.row .columna1 h1{
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+.row .columna1 h2{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.row .columna1 .button{
+    background-color: white;
+    width: 20em;
+    height: 3em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .columna1 .button input{
+    background-color: white;
+    width: 20em;
+    height: 3em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    border: white;
+    padding: 1em;
+    font-size: 1rem;
+}
+
+.row .columna1 .button button{
+    background-color: rgb(0, 0, 0);
+    width: 20em;
+    height: 3em;
+    border-end-end-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    font-size: 1rem;
+    color: white;
+}
+
+.row .columna1 .icons-list il a img{
+    width: 2em;
+    margin-left: 1em;
+}
+
+.row .columna2{
+    padding-left: 4em;
+}
+
+.row .columna2 .titulos{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.row .columna2 .contenidos{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.row .columna2 .contenidos li{
+    padding-bottom: 1em;
+}
+.row .columna2 .contenidos li a{
+    text-decoration: none;
+    padding-bottom: 1em;
+    color: gray;
+}
+
+.row .columna2 .contenidos li a:hover{
+    text-decoration: underline;
+    padding-bottom: 1em;
+    color: rgb(160, 33, 33);
+}

@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+*{box-sizing: border-box;}
+
+
+/* HEADER STYLES */
+
+
+.header-container{
+    background-color: #a83338;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+}
+
+.header-container .logo-siman-big{
+    width: 15em;
+    margin-left: 1em;
+}
+
+.header-container .search-container{
+    background-color: #7a232e;
+    width: 45em;
+    height: 2.8em;
+    border-radius: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container .search-container .icon-search{
+    margin-left: 1em;
+}
+
+.header-container .search-container .icon-search img{
+    width: 1.5em;
+}
+
+.header-container .search-container input{
+    width: 100%;
+    height: 2em;
+    overflow: hidden;
+    border: #7a232e;
+    background-color: #7a232e;
+    border-radius: 100px;
+    padding-left: 1em;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.header-container .search-container input::placeholder{
+    color: white;
+    font-size: 1.4rem;
+}
+.header-container .search-container input:focus-visible{
+    border: #7a232e;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.icons-header{
+    margin-right: 2em;
+}
+
+.icons-header a img{
+    width: 2.2rem;
+    margin-right: 1.3em;
+}
+
+.navbar-search{
+    background-color: #f1f1f1;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-search ul{
+    margin: 0;
+}
+.navbar-search ul il a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 4px;
+    font-weight: 300;
+}
+
+.navbar-search ul il a:hover{
+    text-decoration:underline;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que el ícono del menú esté por encima de otros elementos */
+}
+
+.navbar-search ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-search ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 999; /* Asegura que el menú lateral esté por encima de otros elementos */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+/* HISTORIA STYLES */
+
+.container {
+    padding-top: 2rem;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.content {
+    margin-bottom: 2rem;
+}
+
+.values-list {
+    list-style: none;
+    padding: 0;
+}
+
+.values-list li {
+    margin-bottom: 0.5rem;
+}
+
+.comunicado-container {
+    margin-top: 2rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.comunicado-container p {
+    margin-bottom: 1rem;
+}
+
+.signature {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+/* footer */
+
+.footer{
+    background-color: #f1f1f1;
+    padding: 2em 10em;
+}
+
+.rower{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.rower .columna1 .logo-footer{
+    width: 15em;
+}
+
+.rower .columna1 h1{
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+.rower .columna1 h2{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.rower .columna1 .button{
+    background-color: white;
+    width: 20em;
+    height: 3em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rower .columna1 .button input{
+    background-color: white;
+    width: 20em;
+    height: 3em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    border: white;
+    padding: 1em;
+    font-size: 1rem;
+}
+
+.rower .columna1 .button button{
+    background-color: rgb(0, 0, 0);
+    width: 20em;
+    height: 3em;
+    border-end-end-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    font-size: 1rem;
+    color: white;
+}
+
+.rower .columna1 .icons-list il a img{
+    width: 2em;
+    margin-left: 1em;
+}
+
+.rower .columna2{
+    padding-left: 4em;
+}
+
+.rower .columna2 .titulos{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.rower .columna2 .contenidos{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.rower .columna2 .contenidos li{
+    padding-bottom: 1em;
+}
+.rower .columna2 .contenidos li a{
+    text-decoration: none;
+    padding-bottom: 1em;
+    color: gray;
+}
+
+.rower .columna2 .contenidos li a:hover{
+    text-decoration: underline;
+    padding-bottom: 1em;
+    color: rgb(160, 33, 33);
+}

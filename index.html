@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Tienda Online de almacenes SIMAN El Salvador | Siman.com</title>
+</head>
+<body>
+    <header>
+        <section class="header-container">
+            <picture>
+                <!-- Logo grande para pantallas grandes -->
+                <source media="(min-width: 1000px)" srcset="./assets/img/logo-grande.svg">
+                <!-- Logo pequeño para pantallas pequeñas -->
+                <img class="logo-siman-big" src="./assets/icons/siman-icons.svg" alt="logo de Siman">
+            </picture>
+            <div class="search-container">
+                <a href="#" class="icon-search"><img src="./assets/icons/search.svg" alt="icono de busqueda"></a>
+                <input type="search" placeholder="Buscar">
+            </div>
+            <article class="icons-header">
+                <a href="#"><img src="./assets/icons/person.svg" alt="icono de registro/inicio de sesion"></a>
+                <a href=""><img src="./assets/icons/cart.svg" alt="carrito de compras"></a>
+            </article>
+        </section>
+        <div class="menu-toggle"><img src="./assets/icons/list.svg" alt=""></div>
+        <nav class="navbar-search">
+            <ul>
+                <li><a href="/historia.html">Historia</a></li>
+                <li><a href="/mision-vision.html">Mision y Vision</a></li>
+                <li><a href="/quienes-somos.html">Quienes Somos</a></li>
+                <li><a href="#">Exclusivo Online</a></li>
+                <li><a href="#">Celulares</a></li>
+                <li><a href="#">Calzado</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="#">Muebles</a></li>
+                <li><a href="#">Belleza</a></li>
+                <li><a href="#">Condiciones de ofertas</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar">
+            <!-- Mismo contenido que en la navbar -->
+            <ul>
+                <li><a href="/historia.html">Historia</a></li>
+                <li><a href="/mision-vision.html">Mision y Vision</a></li>
+                <li><a href="/quienes-somos.html">Quienes Somos</a></li>
+                <li><a href="#">Exclusivo Online</a></li>
+                <li><a href="#">Celulares</a></li>
+                <li><a href="#">Calzado</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="#">Muebles</a></li>
+                <li><a href="#">Belleza</a></li>
+                <li><a href="#">Condiciones de ofertas</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container-content">
+        <section class="content">
+            <picture>
+                <!-- Logo grande para pantallas grandes -->
+                <source class="banner-big" media="(min-width: 768px)" srcset="./assets/gif-home/siman-banner-big.gif">
+                <!-- Logo pequeño para pantallas pequeñas -->
+                <img src="./assets/gif-home/siman-banner-small.gif" alt="banner siman" class="banner-siman">
+            </picture>
+            
+            <article class="carousel">
+                <div class="carousel-images">
+                    <img src="./assets/img/carruselimg1.webp" alt="carrusel imagen 1">
+                    <img src="./assets/img/carruselimg2.webp" alt="carrusel imagen 2">
+                    <img src="./assets/img/carruselimg3.webp" alt="carrusel imagen 3">
+                    <img src="./assets/img/carruselimg4.webp" alt="carrusel imagen 4">
+                    <img src="./assets/img/carruselimg5.webp" alt="carrusel imagen 5">
+                </div>
+                <button class="carousel-button left" onclick="prevSlideCarrusel()">&#10094;</button>
+                <button class="carousel-button right" onclick="nextSlideCarrusel()">&#10095;</button>
+                <div class="carousel-indicators">
+                    <span onclick="goToSlide(0)" class="active"></span>
+                    <span onclick="goToSlide(1)"></span>
+                    <span onclick="goToSlide(2)"></span>
+                    <span onclick="goToSlide(3)"></span>
+                    <span onclick="goToSlide(4)"></span>
+                </div>
+            </article>
+
+            <article class="promos-container">
+                <div class="promos">
+                    <img src="./assets/img/mabe1.webp" alt="imagen de mabe promocion">
+                    <img src="./assets/img/mabe2.webp" alt="imagen de mabe promocion">
+                    <img src="./assets/img/mabe3.webp" alt="imagen de mabe promocion">
+                    <img src="./assets/img/mabe4.webp" alt="imagen de mabe promocion">
+                </div>
+            </article>
+
+            <article>
+                <section class="carousel-container-compras">
+                    <section class="titulos-secciones">
+                        <h1>30% con Credisiman y 20% en otras formas de pago en equipaje</h1>
+                        <a href="#">Ver todo</a>
+                    </section>
+                    <div class="carousel-compras">
+                        <div class="carousel-slide-compras">
+                            <div class="carousel-item-compras">
+                                <img src="./assets/img/carruselcompras1.webp" alt="Imagen 1">
+                                <div class="product-info-compras">
+                                    <p class="product-name-compras">Producto 1</p>
+                                    <button class="buy-button-compras">Agregar a Carrito</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item-compras">
+                                <img src="./assets/img/carruselcompras2.webp" alt="Imagen 2">
+                                <div class="product-info-compras">
+                                    <p class="product-name-compras">Producto 2</p>
+                                    <button class="buy-button-compras">Agregar a Carrito</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item-compras">
+                                <img src="./assets/img/carruselcompras3.webp" alt="Imagen 3">
+                                <div class="product-info-compras">
+                                    <p class="product-name-compras">Producto 3</p>
+                                    <button class="buy-button-compras">Agregar a Carrito</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item-compras">
+                                <img src="./assets/img/carruselcompras4.webp" alt="Imagen 4">
+                                <div class="product-info-compras">
+                                    <p class="product-name-compras">Producto 4</p>
+                                    <button class="buy-button-compras">Agregar a Carrito</button>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item-compras">
+                                <img src="./assets/img/carruselcompras5.webp" alt="Imagen 5">
+                                <div class="product-info-compras">
+                                    <p class="product-name-compras">Producto 5</p>
+                                    <button class="buy-button-compras">Agregar a Carrito</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item-compras">
+                                <img src="./assets/img/carruselcompras6.webp" alt="Imagen 6">
+                                <div class="product-info-compras">
+                                    <p class="product-name-compras">Producto 6</p>
+                                    <button class="buy-button-compras">Agregar a Carrito</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item-compras">
+                                <img src="./assets/img/carruselcompras7.webp" alt="Imagen 7">
+                                <div class="product-info-compras">
+                                    <p class="product-name-compras">Producto 7</p>
+                                    <button class="buy-button-compras">Agregar a Carrito</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item-compras">
+                                <img src="./assets/img/carruselcompras8.webp" alt="Imagen 8">
+                                <div class="product-info-compras">
+                                    <p class="product-name-compras">Producto 8</p>
+                                    <button class="buy-button-compras">Agregar a Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-compras prev-compras" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-control-compras next-compras" onclick="nextSlide()">&#10095;</button>
+                </section>
+            </article>
+
+            <article class="divisor">
+                <section class="container-categorias">
+                    <div class="circle">
+                      <img src="./assets/img/circle1.webp" alt="Fragrancias">
+                      <div class="text">Fragrancias</div>
+                      <h1>Fragancias</h1>
+                    </div>
+                    <div class="circle">
+                      <img src="./assets/img/circle2.webp" alt="Pequeños enseres">
+                      <div class="text">enseres</div>
+                    </div>
+                    <div class="circle">
+                      <img src="./assets/img/circle3.webp" alt="Motocicletas">
+                      <div class="text">Motocicletas</div>
+                    </div>
+                    <div class="circle">
+                      <img src="./assets/img/circle4.webp" alt="Car Audio">
+                      <div class="text">Car Audio</div>
+                    </div>
+                    <div class="circle">
+                      <img src="./assets/img/circle8.webp" alt="Ropa interior caballeros">
+                      <div class="text">Joyeria</div>
+                    </div>
+                    <div class="circle">
+                      <img src="./assets/img/circle6.webp" alt="Audio">
+                      <div class="text">Audio</div>
+                    </div>
+                  </section>
+            </article>
+
+            <article class="divisor">
+                <section class="img-botom-banner">
+                    <picture>
+                        <source class="banner-big" media="(min-width: 768px)" srcset="./assets/gif-home/lastimgbotom.gif">
+                        <img src="./assets/home-mobile/botom-banner.gif" alt="">
+                    </picture>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="row">
+            <div class="columna1">
+                <img src="/assets/img/siman_com.png" alt="siman-logo" class="logo-footer">
+                <h1>Suscribete para obtener las mejores ofertas</h1>
+                <div class="button">
+                    <input type="email" placeholder="email">
+                    <button type="email">Suscribirme</button>
+                </div>
+                <h2><img src="/assets/icons/telephone.svg" alt="phone-icon"> 2298-3777</h2>
+                <h1>Mantente en contacto con nosotros</h1>
+                <ul class="icons-list">
+                    <il><a href="#"><img src="/assets/icons/facebook.svg" alt=""></a></il>
+                    <il><a href="#"><img src="/assets/icons/instagram.svg" alt=""></a></il>
+                    <il><a href="#"><img src="/assets/icons/twitter-x.svg" alt=""></a></il>
+                    <il><a href="#"><img src="/assets/icons/youtube.svg" alt=""></a></il>
+                </ul>
+            </div>
+
+            <div class="columna2">
+                <h1 class="titulos">SIMAN CORPORATIVO</h1>
+                <ul class="contenidos">
+                    <li><a href="#">Quiénes Somos</a></li>
+                    <li><a href="#">Visión y Misión</a></li>
+                    <li><a href="#">Historia</a></li>
+                    <li><a href="#">Sucursales</a></li>
+                    <li><a href="#">Servicio</a></li>
+                </ul>
+            </div>
+
+            <div class="columna2">
+                <h1 class="titulos">PROGRAMAS</h1>
+                <ul class="contenidos">
+                    <li><a href="#">Monedero</a></li>
+                    <li><a href="#">Certidicados de Regalo</a></li>
+                    <li><a href="#">Garantias</a></li>
+                    <li><a href="#">Siman PRO</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                </ul>
+            </div>
+
+            <div class="columna2">
+                <h1 class="titulos">SERVICIO AL CLIENTE</h1>
+                <ul class="contenidos">
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Política de devoluciones</a></li>
+                    <li><a href="#">Contáctenos</a></li>
+                    <li><a href="#">Seguridad del sitio</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <script src="./assets/js/funciones.js"></script>
+</body>
+</html>

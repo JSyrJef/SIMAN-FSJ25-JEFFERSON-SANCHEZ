@@ -1,0 +1,224 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    .logo-siman-big{
+        width: 30px !important;
+        margin: 0 1em !important;
+    }
+
+    .header-container{
+        background-color: #a83338;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+    }
+
+    .icons-header{
+        display: flex;
+        margin-right: 1em;
+    }
+
+    .navbar-search ul {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+        margin: auto;
+        background-color:#f1f1f1 ;
+    }
+
+    .menu-toggle img{
+        display: block;
+        margin: auto;
+        width: 35px;
+    }
+    
+    .container-content .content .banner-siman{
+        border-radius: 20px;
+        display: grid;
+        margin: 1em auto;
+        width: 100vw;
+    }
+
+    .carousel {
+        width: 95vw;
+        height: 20vh;
+    }
+    
+    /* Contenedor de las imágenes */
+    .carousel-images {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    /* Cada imagen ocupa el 100% del contenedor principal */
+    .carousel-images img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .promos-container .promos{
+        grid-template-columns: 1fr;
+    }
+
+    .promos-container .promos img{
+        width: 95vw;
+        margin: 1em 0;
+ 
+    }
+
+    .carousel-container-compras {
+        width: 95vw; /* Ajusta el ancho según sea necesario */
+
+    }
+
+    .carousel-item-compras {
+        min-width: 50%; /* Cada item ocupa el 25% del ancho del carrusel (4 imágenes por slide) */
+    }
+
+    .titulos-secciones{
+        font-size: 1rem;
+    }
+    
+    .titulos-secciones h1{
+       font-weight: 300;
+    }
+    
+    .titulos-secciones a{
+        color: black;
+    }
+
+    .img-botom-banner img{
+        width: 95vw;
+    }
+
+    .footer{
+        background-color: #f1f1f1;
+    }
+
+    .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+  
+    .row .columna1 .button input{
+        width: 10em;
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 991px) {
+    .logo-siman-big{
+        width: 30px !important;
+        margin: 0 1em !important;
+    }
+
+    .header-container{
+        background-color: #a83338;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+    }
+
+    .icons-header{
+        display: flex;
+        margin-right: 1em;
+    }
+
+    .navbar-search ul {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+        margin: auto;
+        background-color:#f1f1f1 ;
+    }
+
+    .menu-toggle img{
+        display: block;
+        margin: auto;
+        width: 35px;
+    }
+    
+    .container-content .content .banner-siman{
+        border-radius: 20px;
+        display: grid;
+        margin: 1em auto;
+        width: 100vw;
+    }
+
+    .carousel {
+        width: 95vw;
+        height: 20vh;
+    }
+    
+    /* Contenedor de las imágenes */
+    .carousel-images {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    /* Cada imagen ocupa el 100% del contenedor principal */
+    .carousel-images img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .promos-container .promos{
+        grid-template-columns: 1fr;
+    }
+
+    .promos-container .promos img{
+        width: 95vw;
+        margin: 1em 0;
+ 
+    }
+
+    .carousel-container-compras {
+        width: 95vw; /* Ajusta el ancho según sea necesario */
+
+    }
+
+    .carousel-item-compras {
+        min-width: 50%; /* Cada item ocupa el 25% del ancho del carrusel (4 imágenes por slide) */
+    }
+
+    .titulos-secciones{
+        font-size: 1rem;
+    }
+    
+    .titulos-secciones h1{
+       font-weight: 300;
+    }
+    
+    .titulos-secciones a{
+        color: black;
+    }
+
+    .img-botom-banner img{
+        width: 95vw;
+    }
+
+    .footer{
+        background-color: #f1f1f1;
+    }
+
+    .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+  
+    .row .columna1 .button input{
+        width: 10em;
+    }
+}

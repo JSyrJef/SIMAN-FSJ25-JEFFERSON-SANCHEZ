@@ -1,0 +1,125 @@
+/* footer */
+
+.footer{
+    background-color: #f1f1f1;
+    padding: 2em 10em;
+}
+
+.rower{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.rower .columna1 .logo-footer{
+    width: 15em;
+}
+
+.rower .columna1 h1{
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+.rower .columna1 h2{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.rower .columna1 .button{
+    background-color: white;
+    width: 20em;
+    height: 3em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rower .columna1 .button input{
+    background-color: white;
+    width: 20em;
+    height: 3em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    border: white;
+    padding: 1em;
+    font-size: 1rem;
+}
+
+.rower .columna1 .button button{
+    background-color: rgb(0, 0, 0);
+    width: 20em;
+    height: 3em;
+    border-end-end-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    font-size: 1rem;
+    color: white;
+}
+
+.rower .columna1 .icons-list il a img{
+    width: 2em;
+    margin-left: 1em;
+}
+
+.rower .columna2{
+    padding-left: 4em;
+}
+
+.rower .columna2 .titulos{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.rower .columna2 .contenidos{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.rower .columna2 .contenidos li{
+    padding-bottom: 1em;
+}
+.rower .columna2 .contenidos li a{
+    text-decoration: none;
+    padding-bottom: 1em;
+    color: gray;
+}
+
+.rower .columna2 .contenidos li a:hover{
+    text-decoration: underline;
+    padding-bottom: 1em;
+    color: rgb(160, 33, 33);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .footer{
+        background-color: #f1f1f1;
+    }
+
+    .rower{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+  
+    .rower .columna1 .button input{
+        width: 10em;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 991px) {
+    .footer{
+        background-color: #f1f1f1;
+    }
+
+    .rower{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+  
+    .rower .columna1 .button input{
+        width: 10em;
+    }
+}
